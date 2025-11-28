@@ -14,9 +14,9 @@ from the Jaffle Shop public API and loads it into DuckDB.
 ## 🗂 Repository Structure
 jaffle-shop-dlt-pipeline/
 ├── pipeline.py
-├── jaffle_source.py
 ├── requirements.txt
 ├── README.md
 ├── .gitignore
-├── dlt_secrets.toml.example
-└── .github/workflows/deploy.yml
+└── .github/
+    └── workflows/
+        └── deploy.yml
