@@ -1,0 +1,30 @@
+# Python cache
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+
+# Virtual environment
+.venv/
+env/
+ENV/
+
+# DLT pipeline state
+.dlt/
+
+# DuckDB / Parquet files
+*.duckdb
+*.parquet
+
+# Logs
+*.log
+
+# IDE / editor folders
+.vscode/
+.idea/
+*.sublime-project
+*.sublime-workspace
+
+# OS files
+.DS_Store
+Thumbs.db
