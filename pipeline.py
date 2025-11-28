@@ -14,11 +14,16 @@ def paged_resource(endpoint: str):
         while True:
             response = client.get(f"/{endpoint}?page={page}")
             data = response.json()
-
-            if not data.get("data"):
+            if isinstance(data, dict):
+                items = data.get("data",[])
+            elif isinstance(data, list):
+                items = data
+            else:
+                items=  []
+            elif not items:
                 break
 
-            yield data["data"]  # yield whole page
+            yield items  # yield whole page
 
             page += 1
 
