@@ -19,12 +19,11 @@ def paged_resource(endpoint: str):
             elif isinstance(data, list):
                 items = data
             else:
-                items=  []
-            elif not items:
+                items =  []
+            if not items:
                 break
 
-            yield items  # yield whole page
-
+            yield items  
             page += 1
 
     return get_pages()
