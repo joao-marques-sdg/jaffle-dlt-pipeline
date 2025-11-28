@@ -16,13 +16,3 @@ from the Jaffle Shop public API and loads it into DuckDB.
 ```bash
 pip install -r requirements.txt
 python pipeline.py
-
-## 🗂 Repository Structure
-jaffle-shop-dlt-pipeline/
-├── pipeline.py
-├── requirements.txt
-├── README.md
-├── .gitignore
-└── .github/
-    └── workflows/
-        └── deploy.yml
