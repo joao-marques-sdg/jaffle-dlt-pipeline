@@ -1,5 +1,4 @@
 import dlt
-from dlt.sources.rest_api import RESTAPIResource
 from dlt.sources.helpers.rest_client import RESTClient
 
 
